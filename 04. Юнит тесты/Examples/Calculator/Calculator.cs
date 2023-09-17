@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Example1
-{
-    class Program
+namespace Calculator
+{    
+    public class Calculator
     {
-        static void Main(string[] args)
+        public int Div(int a, int b)
         {
-            new Calculator().Div(1, 1);
+            return a / b;
         }
     }
 }

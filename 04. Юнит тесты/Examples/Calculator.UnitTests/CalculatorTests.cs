@@ -1,28 +1,16 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Example1;
+using Calculator;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Example1.Tests
+namespace Calculator.Tests
 {
     [TestClass()]
     public class CalculatorTests
-    {
-        [TestMethod()]
-        public void DivOneByOne()
-        {
-            var calculator = new Calculator();
-
-            var expected = 1;
-
-            var actual = calculator.Div(1, 1);
-
-            Assert.AreEqual(expected, actual);
-        }
-
+    {       
         [TestMethod()]
         public void DivTwoByOne()
         {
