@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Example8
 {
-    public class HttpRepository
+    public class HttpSender
     {
         public string SendRequest(string url)
         {

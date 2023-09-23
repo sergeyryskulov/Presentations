@@ -9,14 +9,13 @@ using System.Threading.Tasks;
 namespace Example8.Tests
 {
     [TestClass()]
-    public class HttpRepositoryTests
+    public class HttpSenderTests
     {
         [TestMethod()]
         public void SendRequestTest()
         {
-            var result = new HttpRepository().SendRequest("https://portal.cft.ru");
-            Assert.IsTrue(result.Contains("Портал"));
-            
+            var result = new HttpSender().SendRequest("https://ya.ru");
+            Assert.IsTrue(result.Contains("Яндекс"));
         }
     }
 }
