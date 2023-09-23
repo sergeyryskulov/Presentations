@@ -3,18 +3,11 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
 
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="ReadMe.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="ReadMe.txt" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
@@ -25,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BigService\BigService.csproj" />
+    <ProjectReference Include="..\DependencyInjection\DependencyInjection.csproj" />
   </ItemGroup>
 
 </Project>
