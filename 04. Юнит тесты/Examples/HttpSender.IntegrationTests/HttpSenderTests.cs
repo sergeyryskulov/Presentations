@@ -12,9 +12,9 @@ namespace Example8.Tests
     public class HttpSenderTests
     {
         [TestMethod()]
-        public void SendRequestTest()
+        public async Task SendRequestTest()
         {
-            var result = new HttpSender().SendRequest("https://ya.ru");
+            var result = await new HttpSender().SendRequest("https://ya.ru");
             Assert.IsTrue(result.Contains("Яндекс"));
         }
     }
