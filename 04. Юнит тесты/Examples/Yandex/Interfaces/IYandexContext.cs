@@ -2,6 +2,6 @@
 {
     public interface IYandexContext
     {
-        string SendRequest(string yandexApiUrl);
+        Task<string> SendRequestAsync(string yandexApiUrl);
     }
 }

@@ -9,10 +9,11 @@ namespace Yandex.Contexts
 {
     public class YandexContext : IYandexContext
     {
-        public string SendRequest(string yandexApiUrl)
+        public async Task<string> SendRequestAsync(string yandexApiUrl)
         {
             //запрос к яндексу
-            return "ok";
+            await Task.Delay(100);            
+            return "result data from yandex";
         }
     }
 }

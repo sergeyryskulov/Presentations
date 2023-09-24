@@ -14,16 +14,16 @@ namespace Yandex.Storages.Tests
     public class YandexStorageTests
     {
         [TestMethod()]
-        public void GetOrderTest()
+        public async Task GetOrderTest()
         {
             var yandexContextMock = new Mock<IYandexContext>();
 
-            yandexContextMock.Setup(m => m.SendRequest("https://business.taxi.yandex.ru/api/order/1")).Returns(
+            yandexContextMock.Setup(m => m.SendRequestAsync("https://business.taxi.yandex.ru/api/order/1")).ReturnsAsync(
                 @"{""id"": ""1"", ""status"": ""complete""}");
 
             var yandexRepository = new YandexStorage(yandexContextMock.Object);
 
-            var actualOrder = yandexRepository.GetOrder(1);
+            var actualOrder = await yandexRepository.GetOrderAsync(1);
 
             Assert.AreEqual(1, actualOrder.Id);
 

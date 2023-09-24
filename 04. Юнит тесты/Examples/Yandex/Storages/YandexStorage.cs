@@ -18,9 +18,9 @@ namespace Yandex.Storages
             _context = context;
         }
 
-        public YandexOrderModel GetOrder(int id)
+        public async Task<YandexOrderModel> GetOrderAsync(int id)
         {
-            string yandexOrderNotParsed = _context.SendRequest("https://business.taxi.yandex.ru/api/order/" + id);
+            string yandexOrderNotParsed = await _context.SendRequestAsync("https://business.taxi.yandex.ru/api/order/" + id);
 
             var objectForParse = JObject.Parse(yandexOrderNotParsed);
 
