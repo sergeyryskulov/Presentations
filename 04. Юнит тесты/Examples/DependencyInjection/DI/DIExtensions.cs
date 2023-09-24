@@ -3,9 +3,9 @@ using System.Reflection;
 
 namespace DependencyInjection.DI
 {
-    public static class DIConfig
+    public static class DIExtensions
     {
-        public static void AddServices(this IServiceCollection services)
+        public static void AddMyServices(this IServiceCollection services)
         {
             foreach (Type type in typeof(HomeService).Assembly.GetTypes().Where(t => t.Name.EndsWith("Service") && !t.IsInterface))
             {

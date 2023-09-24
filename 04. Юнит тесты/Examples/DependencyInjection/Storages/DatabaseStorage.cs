@@ -2,7 +2,7 @@
 
 namespace DependencyInjection.Storages
 {
-    public class TestStorage : IMyStorage
+    public class DatabaseStorage : IDatabaseStorage
     {
         public string GetData()
         {

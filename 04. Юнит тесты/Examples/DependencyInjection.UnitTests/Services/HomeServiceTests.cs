@@ -16,7 +16,7 @@ namespace DependencyInjection.Services.Tests
         [TestMethod()]
         public void MyMethodTest()
         {
-            var storage = new Mock<IMyStorage>();
+            var storage = new Mock<IDatabaseStorage>();
 
             storage.Setup(m => m.GetData()).Returns("test data");
 

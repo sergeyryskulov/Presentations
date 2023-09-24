@@ -1,14 +1,15 @@
-﻿using DependencyInjection.Interfaces;
+﻿using Application.Interfaces;
+using DAL.Interfaces;
 
-namespace DependencyInjection.Services
+namespace Application.Services
 {
     public class HomeService : IHomeService
     {
         private IDatabaseStorage _databaseStorage;
 
-        public HomeService(IDatabaseStorage testStorage)
+        public HomeService(IDatabaseStorage databaseStorage)
         {
-            _databaseStorage = testStorage;
+            _databaseStorage = databaseStorage;
         }
 
         public string MyMethod()

@@ -1,6 +1,6 @@
 ﻿namespace DependencyInjection.Interfaces
 {
-    public interface IMyStorage
+    public interface IDatabaseStorage
     {
         string GetData();
     }
