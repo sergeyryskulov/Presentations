@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
-using Application.Interfaces;
+using ApplicationLayer.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Application.Controllers;
+namespace ApplicationLayer.Controllers;
 
 public class HomeController : Controller
 {
@@ -11,11 +11,11 @@ public class HomeController : Controller
 
     public HomeController(IHomeService homeService)
     {
-        _homeService = homeService;        
+        _homeService = homeService;
     }
 
     public IActionResult Index()
     {
         return View("Index", _homeService.MyMethod());
-    }  
+    }
 }

@@ -1,4 +1,4 @@
-﻿namespace DAL.Interfaces
+﻿namespace DALLayer.Interfaces
 {
     public interface IDatabaseStorage
     {

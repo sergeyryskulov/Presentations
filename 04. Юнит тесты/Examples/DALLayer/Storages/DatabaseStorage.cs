@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DAL.Interfaces;
+using DALLayer.Interfaces;
 
-namespace DAL.Storages
+namespace DALLayer.Storages
 {
     internal class DatabaseStorage : IDatabaseStorage
     {

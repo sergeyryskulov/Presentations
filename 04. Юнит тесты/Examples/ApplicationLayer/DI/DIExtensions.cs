@@ -1,17 +1,18 @@
-﻿using Application.Interfaces;
-using Application.Services;
-using DAL.DI;
-using System.Reflection;
+﻿using ApplicationLayer.Interfaces;
+using ApplicationLayer.Services;
 
-namespace Application.DI
+using System.Reflection;
+using DALLayer.DI;
+
+namespace ApplicationLayer.DI
 {
     public static class DIExtensions
     {
         public static void AddMyServices(this IServiceCollection services)
         {
             services.AddScoped<IHomeService, HomeService>();
-            
+
             services.AddDal();
-        }     
+        }
     }
 }

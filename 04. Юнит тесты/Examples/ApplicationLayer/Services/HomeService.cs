@@ -1,7 +1,7 @@
-﻿using Application.Interfaces;
-using DAL.Interfaces;
+﻿using ApplicationLayer.Interfaces;
+using DALLayer.Interfaces;
 
-namespace Application.Services
+namespace ApplicationLayer.Services
 {
     public class HomeService : IHomeService
     {

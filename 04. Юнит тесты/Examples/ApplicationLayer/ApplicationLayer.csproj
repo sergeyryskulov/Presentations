@@ -7,19 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="ReadMe.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="ReadMe.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DAL\DAL.csproj" />
+    <ProjectReference Include="..\DALLayer\DALLayer.csproj" />
   </ItemGroup>
 
 </Project>

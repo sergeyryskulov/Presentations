@@ -1,4 +1,4 @@
-﻿namespace Application.Interfaces
+﻿namespace ApplicationLayer.Interfaces
 {
     public interface IHomeService
     {
